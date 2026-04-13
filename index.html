@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olympe HATCHI &mdash; Portfolio</title>
+<script>
+  var t=localStorage.getItem('theme')||'dark';
+  document.documentElement.setAttribute('data-theme',t);
+  document.addEventListener('DOMContentLoaded',function(){document.body.setAttribute('data-theme',t);});
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Outfit:wght@200;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<canvas id="stars-canvas"></canvas>
+<div class="wrap">
+  <header id="hdr">
+    <div class="h-inner">
+      <a class="logo" href="index.html">OH</a>
+      <nav id="nav"><ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="projet.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></nav>
+      <div class="h-actions">
+        <button id="toggle-theme" aria-label="Basculer theme">&#9728;</button>
+        <button id="burger" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Etudiant BUT MMI</p>
+      <h1 class="hero-name">Olympe<br><em>HATCHI</em></h1>
+      <p class="hero-sub">Design &middot; Video &middot; Web &middot; Photo</p>
+      <a href="projet.html" class="hero-cta">Mes projets <span>&rarr;</span></a>
+    </div>
+    <div class="hero-visual">
+      <div class="orb orb1"></div><div class="orb orb2"></div>
+      <div class="photo-wrap">
+        <img src="img/IMG_MOI.jpg" alt="Olympe HATCHI">
+        <div class="photo-border">
+          <div class="photo-dot pd1"></div><div class="photo-dot pd2"></div>
+          <div class="photo-dot pd3"></div><div class="photo-dot pd4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-bg" id="apropos">
+    <div class="deco-line" style="top:0"></div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal2">
+          <div class="sec-label">A propos</div>
+          <h2 class="big">Passionne de<br><em>multimedia</em></h2>
+          <p>Bonjour&nbsp;! Je suis Olympe, etudiant en BUT Metiers du Multimedia et de l'Internet.</p>
+          <p>Je me specialise dans le design graphique avec Canva, le montage video avec CapCut, et je developpe mes competences en HTML/CSS. La photographie est egalement une de mes passions.</p>
+          <p>Mon objectif est de devenir <strong style="color:var(--accent);font-weight:500">Monteur Video</strong> afin de gerer des projets multimedias de A a Z.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><span class="stat-n">4</span><span class="stat-l">Disciplines creatives</span></div>
+          <div class="stat"><span class="stat-n">BUT</span><span class="stat-l">MMI en cours</span></div>
+          <div class="stat"><span class="stat-n">&infin;</span><span class="stat-l">Creativite</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="deco-line" style="bottom:0"></div>
+  </section>
+
+  <section class="section" id="competences">
+    <div class="container">
+      <div class="sec-label reveal">Competences</div>
+      <h2 class="big reveal">Ce que je<br><em>maitrise</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="sk-ico">&#9672;</div><h3>HTML / CSS</h3><p>Integration web, design responsive et animations CSS.</p><div class="bar"><div class="bar-fill" style="width:65%"></div></div></div>
+        <div class="skill-card"><div class="sk-ico">&#9673;</div><h3>Design Graphique</h3><p>Creation visuelle avec Canva, compositions et identites visuelles.</p><div class="bar"><div class="bar-fill" style="width:70%"></div></div></div>
+        <div class="skill-card"><div class="sk-ico">&#9654;</div><h3>Montage Video</h3><p>Edition et production video avec CapCut, storytelling visuel.</p><div class="bar"><div class="bar-fill" style="width:72%"></div></div></div>
+        <div class="skill-card"><div class="sk-ico">&#9678;</div><h3>Photographie</h3><p>Cadrage, lumiere naturelle, retouche et composition artistique.</p><div class="bar"><div class="bar-fill" style="width:60%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about-bg" id="projets">
+    <div class="deco-line" style="top:0"></div>
+    <div class="container">
+      <div class="sec-label reveal">Projets</div>
+      <h2 class="big reveal">Dernieres<br><em>realisations</em></h2>
+      <div class="projects-grid">
+        <article class="proj-card reveal">
+          <div class="proj-img-wrap"><img src="img/IMG_Projet.png" alt="Autobiographie de Charles Le Brun"></div>
+          <div class="proj-body"><h3>Autobiographie de Charles Le Brun</h3><p>Slide sur la présentation de Charles le Brun fait sur Canva.</p></div>
+          <div class="proj-tag">Présentation &middot; Motion Design &middot; Canva</div>
+        </article>
+        <article class="proj-card reveal">
+          <div class="proj-img-wrap" ><img src="img/IMG_Projet2.png" alt="Design d'un Logotype"></div>
+          <div class="proj-body"><h3>Design d'un Logotype</h3><p>Exposition et explication de la creation de mon Logotype.</p></div>
+          <div class="proj-tag">Design Graphique &middot; Canva</div>
+        </article>
+        <article class="proj-card reveal">
+          <div class="proj-img-wrap"><img src="img/IMG_Projet3.png" alt="Présentation de mon moodboard pour ma pub du Parfum Yves Saint Laurent Myslf"></div>
+          <div class="proj-body"><h3>Présentation moodboard</h3><p>Présentation de mon moodboard pour ma pub du Parfum Yves Saint Laurent Myslf.</p></div>
+          <div class="proj-tag">Présentation &middot; Design graphique &middot; Canva</div>
+        </article>
+      </div>
+      <div style="margin-top:3rem;display:flex;justify-content:center;">
+        <a href="projet.html" class="hero-cta">Voir tous les projets <span>&rarr;</span></a>
+      </div>
+    </div>
+    <div class="deco-line" style="bottom:0"></div>
+  </section>
+
+  <section class="section contact-band">
+    <div class="container cb-inner">
+      <div>
+        <div class="sec-label">Contact</div>
+        <h2 class="big">Travaillons<br><em>ensemble</em></h2>
+        <p style="color:var(--muted);font-weight:200">Un projet creatif ? Je suis disponible.</p>
+      </div>
+      <div class="clinks">
+        <a href="mailto:lenyhtchi@gmail.com" class="chip">&#x2709; lenyhtchi@gmail.com</a>
+        <a href="https://www.linkedin.com/in/hatchiol" target="_blank" rel="noopener" class="chip">in LinkedIn</a>
+        <a href="contact.html" class="btn-g">Me contacter &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fi">
+      <a class="logo" href="index.html">OH</a>
+      <small>&copy; <span id="annee"></span> Olympe HATCHI &mdash; BUT MMI</small>
+      <nav><a href="index.html">Accueil</a><a href="projet.html">Projets</a><a href="contact.html">Contact</a></nav>
+    </div>
+  </footer>
+</div>
+<script>
+(function(){
+  var canvas=document.getElementById('stars-canvas');
+  var ctx=canvas.getContext('2d');
+  var W,H,stars=[],nebulas=[],consts=[];
+  var N=80,NEB=2,NC=4;
+  function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
+  function isDark(){return document.documentElement.getAttribute('data-theme')==='dark';}
+  function mkStar(){var d=isDark();var c=d?(Math.random()>.85?'#c8a96e':Math.random()>.7?'#7b9cff':'rgba(255,255,255,0.9)'):(Math.random()>.85?'#9a6e2a':Math.random()>.7?'#3a5fcc':'rgba(0,0,0,0.7)');return{x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.2+.2,alpha:Math.random()*.8+.2,speed:Math.random()*.25+.05,ts:Math.random()*.02+.005,td:Math.random()>.5?1:-1,color:c};}
+  function mkNeb(){var d=isDark();return{x:Math.random()*W,y:Math.random()*H,r:Math.random()*180+80,alpha:d?Math.random()*.06+.02:Math.random()*.04+.01,color:d?(Math.random()>.5?'rgba(123,156,255,':'rgba(200,169,110,'):(Math.random()>.5?'rgba(58,95,204,':'rgba(154,110,42,')};}
+  function mkConst(){var d=isDark();var cx=Math.random()*W,cy=Math.random()*H,nb=Math.floor(Math.random()*4)+3;var pts=Array.from({length:nb},function(){return{x:cx+(Math.random()-.5)*220,y:cy+(Math.random()-.5)*220,r:Math.random()*.8+1};});var lk=[];for(var i=1;i<pts.length;i++)lk.push([i-1,i]);if(pts.length>3&&Math.random()>.5)lk.push([0,Math.floor(Math.random()*(pts.length-2))+1]);return{pts:pts,lk:lk,alpha:0,ta:d?Math.random()*.25+.08:Math.random()*.18+.05,fs:Math.random()*.003+.001,fd:1,color:d?(Math.random()>.6?'#c8a96e':'#7b9cff'):(Math.random()>.6?'#9a6e2a':'#3a5fcc')};}
+  function init(){resize();stars=Array.from({length:N},mkStar);nebulas=Array.from({length:NEB},mkNeb);consts=Array.from({length:NC},mkConst);}
+  function drawC(){consts.forEach(function(c){c.alpha+=c.fs*c.fd;if(c.alpha>=c.ta)c.fd=-1;if(c.alpha<=0){Object.assign(c,mkConst());c.alpha=0;c.fd=1;return;}ctx.globalAlpha=c.alpha*.6;ctx.strokeStyle=c.color;ctx.lineWidth=0.5;c.lk.forEach(function(l){ctx.beginPath();ctx.moveTo(c.pts[l[0]].x,c.pts[l[0]].y);ctx.lineTo(c.pts[l[1]].x,c.pts[l[1]].y);ctx.stroke();});ctx.globalAlpha=c.alpha;c.pts.forEach(function(p){ctx.fillStyle=c.color;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();});});}
+  function draw(){ctx.clearRect(0,0,W,H);nebulas.forEach(function(n){var g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,n.r);g.addColorStop(0,n.color+n.alpha+')');g.addColorStop(1,n.color+'0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,Math.PI*2);ctx.fill();});drawC();stars.forEach(function(s){s.alpha+=s.ts*s.td;if(s.alpha>=1||s.alpha<=.1)s.td*=-1;s.y-=s.speed;if(s.y<-2){s.y=H+2;s.x=Math.random()*W;}ctx.globalAlpha=s.alpha;ctx.fillStyle=s.color;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fill();});ctx.globalAlpha=1;requestAnimationFrame(draw);}
+  window.addEventListener('resize',function(){resize();nebulas=Array.from({length:NEB},mkNeb);consts=Array.from({length:NC},mkConst);});
+  window.__regenStars=function(){stars=Array.from({length:N},mkStar);nebulas=Array.from({length:NEB},mkNeb);consts=Array.from({length:NC},mkConst);};
+  init();draw();
+})();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
